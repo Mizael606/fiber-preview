@@ -1,14 +1,19 @@
-<div class="Modal.blur"></div>
+<div (click)="hideModal()" class="Modal.blur"></div>
 <section class="Modal">
-  <header class="Modal.header">
-    <h4 class="Modal.title">
-      <ng-content select=".title"></ng-content>
-    </h4>
-    <button class="Modal.close">
+  <header class="Modal.header flex flex-wrap py-4 px-2 items-center">
+    <div class="lg:w-11/12 w-8/12 mx-auto">
+      <h4 class="Modal.title">
+        <ng-content select=".title"></ng-content>
+      </h4>
+    </div>
+    <button
+      (click)="hideModal()"
+      class="Modal.close lg:w-1/12 w-4/12 text-right"
+    >
       <i class="fa fa-times"></i>
     </button>
   </header>
-  <section class="Modal.body">
+  <section class="Modal.body w-full">
     <ng-content select=".body"></ng-content>
   </section>
 </section>

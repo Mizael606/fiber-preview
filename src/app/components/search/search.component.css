@@ -58,6 +58,10 @@
   top: 10px;
 }
 
+.search\.cta[disabled] {
+  opacity: 0.45;
+}
+
 .search\.error {
   color: red;
   font-size: var(--text-smll-label);

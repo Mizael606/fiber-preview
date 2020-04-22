@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Modal } from "../../../../assets/js/modal";
 
 @Component({
   selector: 'app-modal',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
+  @Input() id: string;
+  private modalClass: Modal;
+
+  public hideModal(): void {
+    this.modalClass.hideModal(this.id);
+  }
+
+  constructor() {
+    this.modalClass = new Modal();
+  }  
 
   ngOnInit(): void {
   }

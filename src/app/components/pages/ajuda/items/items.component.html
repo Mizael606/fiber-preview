@@ -416,7 +416,10 @@
         Não consegue encontrar o que procura?
       </h5>
     </header>
-    <button class="items.cta block w-full font-bold mx-auto">
+    <button
+      (click)="showModal('contato')"
+      class="items.cta block w-full font-bold mx-auto"
+    >
       Entre em contato <i class="fa fa-chevron-right"></i>
     </button>
   </section>

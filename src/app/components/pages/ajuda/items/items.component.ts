@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Modal } from "../../../../../assets/js/modal";
 
 @Component({
   selector: 'app-items',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-  constructor() { }
+  private modalClass: Modal;
+
+  constructor() {
+    this.modalClass = new Modal();
+  }
+
+  public showModal(id: string): void {
+    this.modalClass.showModal(id);
+  }
 
   ngOnInit(): void {
   }

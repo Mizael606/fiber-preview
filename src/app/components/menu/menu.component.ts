@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { scroll } from "../../../assets/js/scroll";
+import { Modal } from "../../../assets/js/modal";
 
 @Component({
   selector: 'app-menu',
@@ -16,10 +17,16 @@ export class MenuComponent implements OnInit {
   private cta: any;
   private scrollTransition: scroll;
   private show: boolean;
+  private modalClass: Modal;
 
   constructor() {
     this.scrollTransition = new scroll();
+    this.modalClass = new Modal();
     this.show = false;
+  }
+
+  public showModal(id: string): void {
+    this.modalClass.showModal(id);
   }
 
   public toggleMenu(): void {

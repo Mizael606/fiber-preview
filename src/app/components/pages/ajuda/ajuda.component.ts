@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Modal } from "../../../../assets/js/modal";
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-ajuda',
@@ -8,13 +10,20 @@ import { Component, OnInit } from '@angular/core';
 export class AjudaComponent implements OnInit {
 
   public headerFixed: any;
+  public modalClass: Modal;
   public show: boolean;
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.modalClass = new Modal();
+  }
 
   public showFixedHeader(): void {
     this.show = true;
     this.headerFixed.className += " is-active";
+  }
+
+  public showModal(id: string): void {
+    this.modalClass.showModal(id);
   }
 
   public hideFixedHeader(): void {
@@ -36,6 +45,12 @@ export class AjudaComponent implements OnInit {
 
   ngOnInit(): void {
     this.initFixedShow();
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
+    });
   }
 
 }

@@ -1,6 +1,7 @@
 .Modal {
   position: fixed;
-  width: 800px;
+  width: 500px;
+  max-width: 95%;
   height: 600px;
   left: 0;
   right: 0;
@@ -10,4 +11,93 @@
   background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
+}
+
+.Modal:not(.slide-in-blurred-top) {
+  display: none;
+}
+
+.Modal\.blur {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: rgba(22, 22, 22, 0.8);
+}
+
+.Modal\.blur:not(.is-show) {
+  display: none;
+}
+
+.Modal\.close {
+  font-size: var(--text-p);
+  outline: none;
+}
+
+.Modal\.title {
+  font-size: var(--menu-fz);
+  color: var(--color-blue)
+}
+
+.slide-in-blurred-top {
+-webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+        .Modal {
+          max-height: 90vh;
+          margin-top: 0;
+          top: 5vh;
+        }
+
+        .Modal\.body {
+          overflow: auto;
+          max-height: 60vh;
+        }
 }

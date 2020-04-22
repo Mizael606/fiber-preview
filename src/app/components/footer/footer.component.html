@@ -4,6 +4,7 @@
   >
     <section class="xl:w-4/12 lg:w-9/12 w-11/12">
       <form
+        [formGroup]="newsletter"
         class="footer.newsletter__form flex flex-wrap mx-auto lg:w-full py-8"
       >
         <header class="footer.newsletter__form-header py-1 w-full">
@@ -16,6 +17,7 @@
             class="footer.input-box__input"
             placeholder="Nome"
             type="text"
+            formControlName="name"
             required
           />
         </div>
@@ -23,15 +25,26 @@
           <input
             class="footer.input-box__input"
             placeholder="E-mail"
+            formControlName="email"
             required
             type="email"
           />
         </div>
         <div class="footer.input-box lg:w-4/12 w-full py-1 px-2">
-          <button class="footer.newsletter__cta">
+          <button
+            (click)="sendNewsletter()"
+            [disabled]="!newsletter.valid"
+            class="footer.newsletter__cta"
+          >
             Enviar
             <i class="fa fa-chevron-right footer.newsletter__cta-icon"></i>
           </button>
+        </div>
+        <div class="footer.input-box w-full py-1">
+          <span class="footer.newsletter_success font-bold hidden">
+            <i class="fa fa-check"></i> Obrigado em breve iremos mandar
+            novidades no seu e-mail!
+          </span>
         </div>
       </form>
     </section>
@@ -92,7 +105,11 @@
           </a>
         </p>
         <p class="footer.text py-2">
-          <a href="" class="footer.text">
+          <a
+            href="Javascript: void(0)"
+            (click)="showModal('contato')"
+            class="footer.text"
+          >
             Contato
           </a>
         </p>
@@ -151,11 +168,77 @@
     </section>
   </section>
 </section>
-<!-- <app-modal>
-  <span class="title">
-    Contato
+<app-modal id="contato">
+  <span class="title font-bold">
+    Envie sua mensagem
   </span>
-  <form class="body">
-    <input type="text" placeholder="Fernando" />
+  <form [formGroup]="message" class="body relative">
+    <section class="w-11/12 mx-auto">
+      <div class="py-2 w-full">
+        <label class="footer.label font-bold" for="namefooter">
+          Nome
+        </label>
+        <input
+          placeholder="Ex.: João Paulo da Cunha"
+          type="text"
+          formControlName="name"
+          class="footer.input w-full"
+          id="namefooter"
+        />
+      </div>
+      <div class="py-2 w-full">
+        <label class="footer.label font-bold" for="emailfooter">
+          E-mail
+        </label>
+        <input
+          placeholder="Ex.: joao.paulo@gmail.com"
+          type="email"
+          formControlName="email"
+          class="footer.input w-full"
+          id="emailfooter"
+        />
+      </div>
+      <div class="py-2 w-full">
+        <label class="footer.label font-bold" for="phonefooter">
+          Telefone
+        </label>
+        <input
+          placeholder="Ex.: (11) 9 6501-6462"
+          type="text"
+          formControlName="phone"
+          class="footer.input w-full"
+          id="phonefooter"
+        />
+      </div>
+      <div class="py-2">
+        <label class="footer.label font-bold" for="messagefooter">
+          Mensagem
+        </label>
+        <textarea
+          formControlName="message"
+          class="footer.input w-full"
+          name=""
+          id="messagefooter"
+        ></textarea>
+      </div>
+      <div class="py-2 text-center flex justify-center footer.captcha">
+        <re-captcha
+          (resolved)="resolved($event)"
+          siteKey="YOUR_SITE_KEY"
+        ></re-captcha>
+      </div>
+      <div class="py-0">
+        <button
+          [disabled]="!message.valid"
+          (click)="sendMessage()"
+          class="footer.cta font-bold block mx-auto"
+        >
+          Continuar
+        </button>
+      </div>
+    </section>
+    <section class="footer.thanks w-full">
+      <div id="thanksfooter" class="w-11/12 mx-auto block"></div>
+    </section>
   </form>
-</app-modal> -->
+</app-modal>

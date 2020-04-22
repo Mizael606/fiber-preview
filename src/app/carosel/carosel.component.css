@@ -1,0 +1,12 @@
+.carousel,
+.carousel\.canvas {
+  width: 100%;
+}
+
+.carousel\.canvas {
+  overflow: hidden;
+}
+
+.carousel\.rails {
+  transition: ease all 220ms;
+}

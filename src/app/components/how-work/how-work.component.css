@@ -1,0 +1,93 @@
+.howWork {
+  min-height: 100vh;
+  background-image: url("../../../assets/images/bg-howWork.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.howWork\.title {
+  font-size: var(--title-h4);
+  color: var(--color-blue);
+}
+
+.howWork\.text {
+  font-size: var(--text-default);
+}
+
+.howWork\.woman__image {
+  max-width: 95%;
+}
+
+.howWork\.blockquote__title {
+  color: var(--color-blue);
+  font-size: var(--text-p);
+}
+
+.howWork\.blockquote__line {
+  position: relative;
+  min-height: 100px;
+}
+
+.howWork\.blockquote__line:not(:nth-child(3)):before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 55px;
+  background-color: var(--color-orange);
+  position: absolute;
+  left: 5px;
+  bottom: -5px;
+}
+
+.howWork\.blockquote__text {
+  font-size: var(--text-disclaimer);
+}
+
+.howWork\.sup {
+  font-size: var(--text-p);
+  position: absolute;
+  left: 0;
+  color: var(--color-orange);
+}
+
+.howWork\.cta {
+  background-color: var(--color-orange);
+  border-radius: 60px;
+  position: relative;
+  padding: 14px 50px;
+  margin-top: 60px;
+  font-size: var(--text-cta);
+  color: #FFFFFF;
+}
+
+
+.howWork\.cta__icons {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .howWork\.title {
+    font-size: var(--title-smll-h4);
+  }
+
+  .howWork\.text {
+    font-size: var(--text-smll-default);
+  }
+
+  .howWork\.blockquote__line:not(:nth-child(3)):before {
+    height: 60%;
+    top: 50px;
+    bottom: initial;
+  }
+
+  .howWork\.cta {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+}

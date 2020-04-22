@@ -1,0 +1,15 @@
+<section class="accordion my-4">
+  <header class="accordion.header w-full py-2 px-4">
+    <h2 class="accordion.title md:font-bold">
+      <ng-content select=".title"></ng-content>
+    </h2>
+    <i class="fa fa-chevron-right"></i>
+  </header>
+  <section class="accordion.body w-full">
+    <section class="accordion.content">
+      <p class="accordion.text py-4 px-4">
+        <ng-content select=".text"></ng-content>
+      </p>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,23 @@
+:root {
+  --color-blue: #572afb;
+  --color-blue-bold: #162675;
+  --color-orange: #e06617;
+  --color-gray: #cecece;
+  --color-violet: #8979d9;
+
+  --menu-fz: 18px;
+  --title-h4: 42px;
+  --title-smll-h4: 22px;
+
+  --text-p: 22px;
+  --text-smll-p: 14px;
+
+  --text-default: 16px;
+  --text-smll-default: 12px;
+
+  --text-label: 14px;
+  --text-smll-label: 11px;
+
+  --text-disclaimer: 12px;
+  --text-cta: 20px;
+}

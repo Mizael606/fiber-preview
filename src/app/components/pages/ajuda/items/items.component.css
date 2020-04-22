@@ -1,0 +1,37 @@
+.items\.title {
+  font-size: var(--title-h4);
+  color: var(--color-blue);
+}
+
+.items\.smalltitle {
+  font-size: var(--text-cta);
+  color: var(--color-blue);
+}
+
+.items\.cta {
+  background-color: var(--color-orange);
+  color: #FFFFFF;
+  font-size: var(--text-cta);
+  padding: 15px 20px;
+  border-radius: 60px;
+}
+
+.items\.search {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: solid 1px var(--color-gray);
+  outline: none;
+}
+
+.items\.search::placeholder {
+  font-weight: bold;
+  color: var(--color-gray);
+}
+
+@media only screen and (max-width: 640px) {
+
+  .items\.title {
+    font-size: var(--title-smll-h4);
+  }
+
+}

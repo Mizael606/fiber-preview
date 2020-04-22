@@ -1,0 +1,89 @@
+.lowestRates {
+  background-image: url("../../../assets/images/bg-howWork.png");
+  min-height: 100vh;
+}
+
+.lowestRates\.title {
+  font-size: var(--title-h4);
+  color: var(--color-blue);
+}
+
+.lowestRates\.numbers__table {
+  background: rgb(24,40,123);
+  background: linear-gradient(0deg, rgba(24,40,123,1) 0%, rgba(39,67,190,1) 100%);
+  border-radius: 8px;
+}
+
+.lowestRates\.numbers__small,
+.lowestRates\.numbers__value {
+  color: #FFFFFF;
+}
+
+.lowestRates\.numbers__small {
+  font-size: var(--text-label);
+}
+
+.lowestRates\.numbers__value {
+  font-size: var(--menu-fz);
+}
+
+.lowestRates\.numbers__table .lowestRates\.numbers__value {
+  padding-bottom: 2px;
+}
+
+.lowestRates\.numbers__title {
+  font-size: var(--menu-fz);
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.lowestRates\.numbers__rival {
+  border: solid 2px var(--color-gray);
+  border-radius: 8px;
+}
+
+.lowestRates\.numbers__rival * {
+  color: var(--color-gray);
+}
+
+.lowestRates\.numbers_imagens {
+  max-height: 30px;
+}
+
+.lowestRates\.graphic__image {
+  max-width: 100%;
+}
+
+.lowestRates\.small {
+  font-size: var(--text-disclaimer);
+}
+
+.lowestRates\.cta {
+  background-color: var(--color-orange);
+  font-size: var(--text-cta);
+  padding: 15px 80px;
+  border-radius: 60px;
+  color: #ffffff;
+  position: relative;
+  margin-top: 30px;
+}
+
+.lowestRates\.cta .fa {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .lowestRates\.title {
+    font-size: var(--title-smll-h4);
+  }
+
+  .lowestRates\.numbers__title,
+  .lowestRates\.numbers__value {
+    font-size: var(--menu-smll-fz);
+  }
+
+}

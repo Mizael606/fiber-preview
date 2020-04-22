@@ -1,0 +1,52 @@
+.accordion{
+  transition: ease 220ms all;
+}
+
+.accordion\.header {
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 4px;
+  border: solid 1px var(--color-gray);
+  position: relative;
+  z-index: 9;
+}
+
+.accordion\.header .fa {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #707070;
+  transition: ease 220ms all;
+}
+
+.accordion\.header .fa.is-active {
+  transform: rotateZ(90deg);
+}
+
+.accordion\.title {
+  font-size: var(--text-default);
+  color: #707070;
+  cursor: pointer;
+}
+
+.accordion\.body {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: ease 220ms max-height;
+  z-index: 9;
+  -webkit-appearance: none;
+}
+
+.accordion\.content {
+  position: relative;
+  top: 0;
+}
+
+.accordion\.text {
+  font-size: var(--text-default);
+  color: #707070;
+}

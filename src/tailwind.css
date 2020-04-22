@@ -1,0 +1,5 @@
+@import "./vars.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

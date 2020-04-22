@@ -1,0 +1,68 @@
+<section class="menu container flex py-6 mx-auto items-center">
+  <figure
+    class="menu.brand md:w-4/12 w-5/12 px-2 flex md:justify-start justify-end"
+  >
+    <a href="" routerLink="/" routerLinkActive="active">
+      <img src="assets/images/logo.png" alt="" />
+    </a>
+  </figure>
+  <div class="w-7/12 flex justify-end px-4 sm:hidden">
+    <button (click)="toggleMenu()" class="menu.toggle">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+  <ul
+    class="menu.links w-8/12 flex flex-wrap items-center md:justify-end justify-start content-start"
+  >
+    <li class="px-4 md:py-0 py-4 md:w-auto w-full md:text-center md:hidden">
+      <a href="javascript: void(0)" (click)="toggleMenu()" class="menu.item__a">
+        <span>
+          <i class="fa fa-times"></i>
+        </span>
+      </a>
+    </li>
+
+    <li class="px-4 md:py-0 py-4 md:w-auto w-full md:text-center">
+      <a href="" class="menu.item__a">
+        <span>
+          Contato
+        </span>
+      </a>
+    </li>
+    <li class="px-4 md:py-0 py-4 md:w-auto w-full md:text-center">
+      <a
+        href=""
+        routerLink="/ajuda"
+        routerLinkActive="active"
+        class="menu.item__a"
+      >
+        <span>
+          Dúvidas
+        </span>
+      </a>
+    </li>
+    <li class="px-4 md:py-0 py-4 md:w-auto w-full md:text-center">
+      <a
+        href="javascript: void(0)"
+        (click)="redirect('#pagefooter')"
+        class="menu.item__a"
+      >
+        <span>
+          Fale conosco
+        </span>
+      </a>
+    </li>
+    <li
+      class="menu.item__button md:w-auto md:mx-none mx-2 text-center py-2 px-6"
+    >
+      <a
+        href="https://app.fibercash.com.br/login?_ga=2.71129109.441627780.1587335113-1730889184.1586109685"
+        class="menu.item__a"
+      >
+        <span>
+          Sua conta
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>

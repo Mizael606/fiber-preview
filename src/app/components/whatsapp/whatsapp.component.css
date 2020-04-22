@@ -1,0 +1,63 @@
+.whatsApp {
+  min-height: 100vh;
+  background-image: url("../../../assets/images/bg-howWork.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whatsApp\.title {
+  color: var(--color-blue);
+  font-size: var(--text-p);
+}
+
+.whatsApp\.text {
+  font-size: var(--text-default);
+}
+
+.whatsApp\.cta {
+  background-color: var(--color-orange);
+  font-size: var(--text-cta);
+  color: #FFFFFF;
+  padding: 10px 45px;
+  border-radius: 60px;
+  position: relative;
+}
+
+.whatsApp\.box {
+  position: relative;
+}
+
+.whatsApp\.box:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30vh;
+  background-color: var(--color-gray);
+  position: absolute;
+  right: -20px;
+  top: 20vh;
+}
+
+.whatsApp\.cta .fa {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.whatsApp\.image {
+  max-width: 90%;
+  width: 440px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .whatsApp\.title {
+    font-size: var(--title-smll-h4);
+  }
+
+  .whatsApp\.text {
+    font-size: var(--text-smll-default);
+  }
+
+}

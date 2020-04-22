@@ -1,0 +1,64 @@
+.search\.body {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px #000000;
+}
+
+.search\.label {
+  font-size: var(--text-label);
+  color: var(--color-blue-bold);
+  cursor: pointer;
+}
+
+.search\.input-box {
+  max-width: 100%;
+  padding: 5px;
+  border: solid 2px var(--color-gray);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.search\.input-box__select,
+.search\.input-box__input {
+  width: 100%;
+  font-size: var(--text-label);
+  cursor: pointer;
+  outline: none;
+}
+
+.search\.input-box__input::placeholder {
+  font-weight: 100;
+}
+
+.search\.input-box__icons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  font-size: var(--text-label);
+}
+
+.search\.cta {
+  background-color: var(--color-orange);
+  color: #FFFFFF;
+  font-size: var(--text-label);
+  padding: 7px;
+  border-radius: 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search\.cta .fa {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.search\.error {
+  color: red;
+  font-size: var(--text-smll-label);
+}

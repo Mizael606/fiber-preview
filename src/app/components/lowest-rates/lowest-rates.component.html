@@ -1,0 +1,137 @@
+<section class="lowestRates">
+  <section class="container mx-auto">
+    <header class="xl:w-7/12 lg:w-10/12 mx-auto py-4">
+      <h2 class="lowestRates.title text-center font-bold">
+        As menores taxas do mercado
+      </h2>
+    </header>
+  </section>
+  <section class="container mx-auto">
+    <section class="xl:w-7/12 lg:w-10/12 flex flex-wrap mx-auto items-end py-8">
+      <div
+        class="xl:w-6/12 lg:w-6/12 w-6/12 lowestRates.numbers xl:px-8 lg:px-2 px-2"
+      >
+        <header class="lowestRates.numbers__header sm:block hidden my-2 py-2">
+          <figure class="lowestRates.numbers__brand">
+            <img
+              class="lowestRates.numbers_imagens mx-auto"
+              src="../../../assets/images/logo-blue.png"
+              alt=""
+            />
+          </figure>
+        </header>
+        <section
+          class="lg:w-full lowestRates.numbers__table py-2 px-4 flex flex-wrap"
+        >
+          <figure
+            class="lowestRates.numbers__brand sm:hidden block w-full py-2"
+          >
+            <img
+              class="lowestRates.numbers_imagens mx-auto"
+              src="../../../assets/images/logo.png"
+              alt=""
+            />
+          </figure>
+          <div class="lg:w-4/12 w-full">
+            <p class="lowestRates.numbers__small font-light">
+              Valor solicitado
+            </p>
+            <p class="lowestRates.numbers__value font-bold">
+              R$ 1.000,00
+            </p>
+          </div>
+          <div class="lg:w-4/12 w-full">
+            <p class="lowestRates.numbers__small font-light">
+              Parcelas
+            </p>
+            <p class="lowestRates.numbers__value font-bold">
+              12x R$ 105,85
+            </p>
+          </div>
+          <div class="lg:w-4/12 w-full">
+            <p class="lowestRates.numbers__small font-light">
+              Total:
+            </p>
+            <p class="lowestRates.numbers__value font-bold">
+              R$ 1.270,20
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="lg:w-6/12 w-6/12 lowestRates.numbers xl:px-8 lg:px-2 px-2">
+        <header class="lowestRates.numbers__header py-2 sm:block hidden">
+          <p class="lowestRates.numbers__title text-center font-bold">
+            Outros
+          </p>
+        </header>
+        <section
+          class="lg:w-full lowestRates.numbers__rival py-2 px-4 flex flex-wrap"
+        >
+          <p
+            class="lowestRates.numbers__title text-center font-bold py-3 sm:hidden block w-full"
+          >
+            Outros
+          </p>
+          <div class="lg:w-4/12">
+            <p class="lowestRates.numbers__small font-light">
+              Valor solicitado
+            </p>
+            <p class="lowestRates.numbers__value font-bold">
+              R$ 1.000,00
+            </p>
+          </div>
+          <div class="lg:w-4/12">
+            <p class="lowestRates.numbers__small font-light text-center">
+              Parcelas
+            </p>
+            <p class="lowestRates.numbers__value font-bold text-center">
+              12x R$ 132,15
+            </p>
+          </div>
+          <div class="lg:w-4/12">
+            <p class="lowestRates.numbers__small font-light text-center">
+              Total:
+            </p>
+            <p class="lowestRates.numbers__value font-bold text-center">
+              R$ 1.585,80
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="xl:w-7/12 lg:w-10/12 w-11/12 flex flex-wrap mx-auto py-4">
+      <figure class="lowestRates.graphic w-full md:py-6">
+        <img
+          class="lowestRates.graphic__image mx-auto sm:block hidden"
+          src="../../../assets/images/grafico.png"
+          alt="Taxas"
+        />
+        <img
+          class="lowestRates.graphic__image mx-auto sm:hidden block"
+          src="../../../assets/images/grafico-mobile.png"
+          alt="Taxas"
+        />
+        <p class="lowestRates.small text-center">
+          Custos de Adquirencia: 2.9% + R$ 0.30 + R$ XX,XX (taxa + custo gateway
+          + antifraude) / IOF: R$ 33.73
+        </p>
+      </figure>
+      <button
+        (click)="redirect(0)"
+        class="lowestRates.cta mx-auto font-bold sm:block hidden"
+      >
+        Faça uma simulação
+        <i class="fa fa-chevron-right lowestRates.cta__icons"></i>
+      </button>
+      <button
+        (click)="redirect(0)"
+        class="lowestRates.cta mx-auto font-bold sm:hidden block"
+      >
+        Simular
+        <i class="fa fa-chevron-right lowestRates.cta__icons"></i>
+      </button>
+    </section>
+  </section>
+</section>

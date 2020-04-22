@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fiber-app"
+    }
+  },
+  "defaultProject": "fiber-app",
+  "cli": {
+    "analytics": "610fbca2-3e92-4b65-aa86-9a2e0b0c75de"
+  }
 }

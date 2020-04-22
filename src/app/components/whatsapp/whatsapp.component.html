@@ -1,0 +1,68 @@
+<section class="whatsApp w-full">
+  <section class="container mx-auto py-2">
+    <section
+      class="xl:w-7/12 lg:w-10/12 flex flex-wrap mx-auto py-8 justify-center items-center"
+    >
+      <section
+        class="whatsApp.box xl:w-7/12 lg:w-6/12 w-11/12 md:py-12 py-4 md:px-2"
+      >
+        <h4 class="whatsApp.title font-bold">
+          O que eu preciso?
+        </h4>
+        <p class="whatsApp.text py-8">
+          Você só precisa ter limite disponível no seu cartão de credito e uma
+          conta bancária de sua titularidade para receber o dinheiro em até 1
+          dia util. Clique aqui, simule e descubra!
+        </p>
+        <h4 class="whatsApp.title font-bold">
+          Pra quem é indicado?
+        </h4>
+        <p class="whatsApp.text py-8">
+          Pessoas que possuem limite disponível no cartão de crédito e desejam
+          sacar o limite e pagar parcelado. Nao importa se você esta negativado
+          a fiber te atende.
+        </p>
+        <h4 class="whatsApp.title font-bold">
+          Importante
+        </h4>
+        <p class="whatsApp.text py-8">
+          • A fiber não faz operações de crédito através do WhatsApp nem por
+          telefone.<br />
+          • A fiber não cobra depósito ou transferência para liberação do
+          saque.<br />
+          • A fiber não liga para pedir pedir sua senha ou qualquer outro
+          dado.<br />
+          • A fiber não vende ou emite cartões de crédito.
+        </p>
+        <button
+          class="whatsApp.cta my-4 font-bold md:block hidden"
+          (click)="redirect(0)"
+        >
+          Faça uma simulação
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <button
+          class="whatsApp.cta my-2 mx-auto w-full font-bold md:hidden block"
+          (click)="redirect(0)"
+        >
+          Simular
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </section>
+      <section class="xl:w-5/12 lg:w-6/12 w-full px-4">
+        <img
+          class="whatsApp.image mx-auto md:my-auto my-8"
+          src="../../../assets//images/indique.png"
+          alt=""
+        />
+        <button
+          (click)="redirect(0)"
+          class="whatsApp.cta my-2 mx-auto w-full font-bold md:hidden block"
+        >
+          Simular
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </section>
+    </section>
+  </section>
+</section>

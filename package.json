@@ -39,9 +39,7 @@
     "tailwindcss": "^1.2.0",
     "tslib": "^1.10.0",
     "vanilla-masker": "^1.2.0",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
+    "zone.js": "~0.10.2",
     "@angular-devkit/build-angular": "~0.901.1",
     "@angular/language-service": "~9.1.1",
     "@types/jasmine": "~3.5.0",

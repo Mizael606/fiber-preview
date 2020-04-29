@@ -1,14 +1,10 @@
 .howWork {
-  min-height: 100vh;
-  background-image: url("../../../assets/images/bg-howWork.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
 }
 
 .howWork\.title {
   font-size: var(--title-h4);
-  color: var(--color-blue);
+  color: var(--color-gray);
 }
 
 .howWork\.text {
@@ -20,7 +16,7 @@
 }
 
 .howWork\.blockquote__title {
-  color: var(--color-blue);
+  color: var(--color-gray);
   font-size: var(--text-p);
 }
 
@@ -33,11 +29,11 @@
   content: "";
   display: block;
   width: 1px;
-  height: 55px;
-  background-color: var(--color-orange);
+  height: 100%;
+  background-color: var(--color-orange-light);
   position: absolute;
   left: 5px;
-  bottom: -5px;
+  top: 25px;
 }
 
 .howWork\.blockquote__text {
@@ -45,22 +41,27 @@
 }
 
 .howWork\.sup {
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
   font-size: var(--text-p);
+  border-radius: 3px;
+  background-color: var(--color-orange-light);
   position: absolute;
-  left: 0;
+  left: -10px;
+  top: 0;
   color: var(--color-orange);
 }
 
 .howWork\.cta {
-  background-color: var(--color-orange);
-  border-radius: 60px;
+  background-color: var(--color-aquamarine);
+  border-radius: 6px;
   position: relative;
   padding: 14px 50px;
   margin-top: 60px;
   font-size: var(--text-cta);
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 .howWork\.cta__icons {
   position: absolute;
@@ -70,7 +71,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
   .howWork\.title {
     font-size: var(--title-smll-h4);
   }
@@ -80,8 +80,8 @@
   }
 
   .howWork\.blockquote__line:not(:nth-child(3)):before {
-    height: 60%;
-    top: 50px;
+    height: 100%;
+    top: 30px;
     bottom: initial;
   }
 
@@ -89,5 +89,4 @@
     margin-top: 10px;
     margin-bottom: 40px;
   }
-
 }

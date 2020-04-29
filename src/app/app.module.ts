@@ -1,6 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
-import { CoreModule } from "./modules/core/core.module";
+import { CoreModule } from './modules/core/core.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -17,7 +17,6 @@ import { HelpComponent } from './components/help/help.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ItemsComponent } from './components/pages/ajuda/items/items.component';
 import { ModalComponent } from './components/pages/modal/modal.component';
-
 
 @NgModule({
   declarations: [
@@ -36,24 +35,16 @@ import { ModalComponent } from './components/pages/modal/modal.component';
     HelpComponent,
     AccordionComponent,
     ItemsComponent,
-    ModalComponent
+    ModalComponent,
   ],
-  imports: [
-    CoreModule
-  ],
+  imports: [CoreModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-
-  constructor(
-    @Optional() @SkipSelf() parentModule: CoreModule
-  ) {
-
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
     if (parentModule) {
       throw new Error('Module core somente no modulo app.');
     }
-
   }
-
- }
+}

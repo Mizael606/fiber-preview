@@ -1,6 +1,4 @@
-@import "./vars.css";
-
-@import "../node_modules/font-awesome/css/font-awesome.css";
+@import url("./imports.css");
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

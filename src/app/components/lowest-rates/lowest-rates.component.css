@@ -5,18 +5,35 @@
 
 .lowestRates\.title {
   font-size: var(--title-h4);
-  color: var(--color-blue);
+  color: var(--color-gray);
 }
 
 .lowestRates\.numbers__table {
-  background: rgb(24,40,123);
-  background: linear-gradient(0deg, rgba(24,40,123,1) 0%, rgba(39,67,190,1) 100%);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffc107+0,ff550e+100 */
+  background: rgb(255, 193, 7); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 193, 7, 1) 0%,
+    rgba(255, 85, 14, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 193, 7, 1) 0%,
+    rgba(255, 85, 14, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 193, 7, 1) 0%,
+    rgba(255, 85, 14, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc107', endColorstr='#ff550e',GradientType=0 ); /* IE6-9 */
+
   border-radius: 8px;
 }
 
 .lowestRates\.numbers__small,
 .lowestRates\.numbers__value {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .lowestRates\.numbers__small {
@@ -59,7 +76,7 @@
 }
 
 .lowestRates\.cta {
-  background-color: var(--color-orange);
+  background-color: var(--color-aquamarine);
   font-size: var(--text-cta);
   padding: 15px 80px;
   border-radius: 60px;
@@ -76,7 +93,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
   .lowestRates\.title {
     font-size: var(--title-smll-h4);
   }
@@ -85,5 +101,4 @@
   .lowestRates\.numbers__value {
     font-size: var(--menu-smll-fz);
   }
-
 }

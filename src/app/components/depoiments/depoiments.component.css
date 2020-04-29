@@ -11,12 +11,12 @@
 }
 
 .depoiments\.feature {
-  font-size: var(--text-default)
+  font-size: var(--text-default);
 }
 
 .depoiments\.feature,
 .depoiments\.feature__big {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .depoiments\.feature__big {
@@ -41,7 +41,7 @@
 
 .depoiments\.title {
   font-size: var(--title-h4);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .depoiments\.canvas {
@@ -49,7 +49,7 @@
   width: 220px;
   height: 220px;
   border-radius: 100%;
-  border: solid 2px #FFFFFF;
+  border: solid 2px #ffffff;
 }
 
 .depoiments\.carousel {
@@ -77,24 +77,20 @@
   transition: ease 220ms all;
 }
 
-.depoiments\.slides:not(.carousel\.center) {
-  opacity: 0.4;
-  transform: scale(0.8)
-}
 
 .depoiments\.name {
   font-size: var(--text-p);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .depoiments\.text {
   font-size: var(--text-label);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .depoiments\.cta {
-  background-color: var(--color-orange);
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: var(--color-orange);
   font-size: var(--text-cta);
   padding: 10px 65px;
   border-radius: 60px;
@@ -109,7 +105,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
   .depoiments\.feature {
     font-size: var(--text-smll-default);
     height: 100px;
@@ -135,13 +130,13 @@
 
   .depoiments\.canvas {
     width: 180px;
-    height: 180px;    
+    height: 180px;
   }
 
   .depoiments\.controls-prev {
     left: 10px;
   }
-  
+
   .depoiments\.controls-next {
     right: 10px;
   }
@@ -153,5 +148,4 @@
   .depoiments\.text {
     font-size: var(--text-smll-label);
   }
-
 }

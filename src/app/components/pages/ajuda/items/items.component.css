@@ -1,16 +1,16 @@
 .items\.title {
   font-size: var(--title-h4);
-  color: var(--color-blue);
+  color: var(--color-gray);
 }
 
 .items\.smalltitle {
   font-size: var(--text-cta);
-  color: var(--color-blue);
+  color: var(--color-gray);
 }
 
 .items\.cta {
-  background-color: var(--color-orange);
-  color: #FFFFFF;
+  background-color: var(--color-aquamarine);
+  color: #ffffff;
   font-size: var(--text-cta);
   padding: 15px 20px;
   border-radius: 60px;
@@ -29,9 +29,7 @@
 }
 
 @media only screen and (max-width: 640px) {
-
   .items\.title {
     font-size: var(--title-smll-h4);
   }
-
 }

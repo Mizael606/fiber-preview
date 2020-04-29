@@ -1,127 +1,125 @@
-<section id="helppage" class="help py-10 w-full">
-  <section class="container mx-auto">
-    <section class="xl:w-7/12 lg:w-10/12 mx-auto">
-      <header class="help.header py-4">
-        <h2 class="help.title text-center font-bold">
-          Nós estamos aqui para ajudar.
-        </h2>
-      </header>
-    </section>
-    <section class="xl:w-7/12 lg:w-10/12 w-11/12 mx-auto">
-      <app-accordion id="q1">
-        <span class="title">
-          Quem é a Fiber?
-        </span>
-        <span class="text">
-          A FiberCash é uma fintech de São Paulo com sede no Jardim Paulistano
-          idealizada por sócios que pensam como você e acreditam que o cliente
-          esta em primeiro lugar, e que o crédito deve ser justo e acessível a
-          todos.
-          <br /><br />
-          Por isso garantimos que trabalhamos com a menor taxa do mercado!
-          Simule e confira assim como mais de 70 mil clientes ja fizeram!
-        </span>
-      </app-accordion>
-      <app-accordion id="q2">
-        <span class="title">
-          A FiberCash é segura?
-        </span>
-        <span class="text">
-          Sim, é extremamente segura!
-          <br /><br />
-          Utilizamos todos os protocolos de segurança e criptografia em todas as
-          nossas operações e banco de dados, o que nos permite ter a certeza de
-          que seu cartão de credito esta blindado conosco.
-          <br /><br />
-          Alem disso, priorizando ainda mais sua segurança e privacidade, já
-          operamos de acordo com a Lei Geral de Proteção de Dados, Lei nº
-          13.709, de 14 de agosto de 2018, que foi adiada e entrará em vigor a
-          partir de agosto de 2021.
-          <br /><br />
-          Seria fácil responder essa pergunta se pudessemos deixar nossos mais
-          de 70 mil clientes falar por nos, mas como não ha espaço suficiente
-          para isso queremos que você tenha a certeza que aqui você é a nossa
-          prioridade!
-        </span>
-      </app-accordion>
-      <app-accordion id="q3">
-        <span class="title">
-          Como funciona a FiberCash?
-        </span>
-        <span class="text">
-          Somos uma plataforma de saque de limite do seu cartão de credito, onde
-          você pode sacar esse valor e pagar em até 12x!
-          <br /><br />
-          O processo é simples, você nos informa quanto quer sacar do seu cartão
-          de credito e em quantas parcelas quer pagar, cadastra-se em nosso site
-          e efetua o processo. Após aprovado em 1 dia util você tem esse valor
-          creditado na sua conta bancaria. Simples assim!
-        </span>
-      </app-accordion>
-      <app-accordion id="q4">
-        <span class="title">
-          O que eu preciso para usar a FiberCash?
-        </span>
-        <span class="text">
-          Você so precisa ter um cartão de credito com limite e uma conta
-          bancaria para receber o valor do seu saque em até 1 dia util.
-        </span>
-      </app-accordion>
-      <app-accordion id="q5">
-        <span class="title">
-          Como eu recebo o valor Solicitado?
-        </span>
-        <span class="text">
-          Basta você simular e solicitar o saque, que após aprovado, você ira
-          preencher os dados de sua conta bancaria onde recebera o credito em
-          até 1 dia util.
-        </span>
-      </app-accordion>
-      <app-accordion id="q6">
-        <span class="title">
-          Qual taxa de juros a FiberCash trabalha?
-        </span>
-        <span class="text">
-          Pensando em você, nos trabalhamos com a menor taxa do mercado!
-          <br /><br />
-          Taxa fixa de 0.99% ao mês!
-          <br /><br />
-          Isso mesmo, não tem segredo e nem taxa mais alta de acordo com perfil
-          do usuário. Aqui a taxa é fixa e ponto final!
-        </span>
-      </app-accordion>
-      <app-accordion id="q7">
-        <span class="title">
-          Como consigo entrar em contato?
-        </span>
-        <span class="text">
-          Você escolhe:
-          <br /><br />
-          Por WhatsApp clicando no ícone do WhatsApp que fica no canto aqui do
-          lado direito ou mandando uma mensagem para o numero 18.98809.6553.
-          <br /><br />
-          Por telefone discando para 4003-1637.
-          <br /><br />
-          Por email no fale@fibercash.com.br
-          <br /><br />
-          Ou clicando em “Contato” no menu acima e enviando sua mensagem.
-        </span>
-      </app-accordion>
-    </section>
-    <button
-      routerLink="/ajuda"
-      routerLinkActive="active"
-      class="help.cta font-bold mx-auto my-8 md:block hidden"
-    >
-      Precisa de ajuda?
-      <i class="fa fa-chevron-right"></i>
-    </button>
-    <button
-      (click)="redirect(0)"
-      class="help.cta font-bold mx-auto my-8 md:hidden block"
-    >
-      Simular
-      <i class="fa fa-chevron-right"></i>
-    </button>
+<section id="helppage" class="help py-12 w-full">
+ <section class="container mx-auto pb-12">
+  <section class="xl:w-7/12 lg:w-10/12 mx-auto">
+   <header class="help.header py-4">
+    <h2 class="help.title text-center font-bold">
+     Nós estamos aqui para ajudar.
+    </h2>
+   </header>
   </section>
+  <section class="xl:w-7/12 lg:w-10/12 w-11/12 mx-auto">
+   <app-accordion id="q1">
+    <span class="title">
+     Quem é a Fiber?
+    </span>
+    <span class="text">
+     A FiberCash é uma fintech de São Paulo com sede no Jardim Paulistano
+     idealizada por sócios que pensam como você e acreditam que o cliente esta
+     em primeiro lugar, e que o crédito deve ser justo e acessível a todos.
+     <br /><br />
+     Por isso garantimos que trabalhamos com a menor taxa do mercado! Simule e
+     confira assim como mais de 70 mil clientes ja fizeram!
+    </span>
+   </app-accordion>
+   <app-accordion id="q2">
+    <span class="title">
+     A FiberCash é segura?
+    </span>
+    <span class="text">
+     Sim, é extremamente segura!
+     <br /><br />
+     Utilizamos todos os protocolos de segurança e criptografia em todas as
+     nossas operações e banco de dados, o que nos permite ter a certeza de que
+     seu cartão de credito esta blindado conosco.
+     <br /><br />
+     Alem disso, priorizando ainda mais sua segurança e privacidade, já operamos
+     de acordo com a Lei Geral de Proteção de Dados, Lei nº 13.709, de 14 de
+     agosto de 2018, que foi adiada e entrará em vigor a partir de agosto de
+     2021.
+     <br /><br />
+     Seria fácil responder essa pergunta se pudessemos deixar nossos mais de 70
+     mil clientes falar por nos, mas como não ha espaço suficiente para isso
+     queremos que você tenha a certeza que aqui você é a nossa prioridade!
+    </span>
+   </app-accordion>
+   <app-accordion id="q3">
+    <span class="title">
+     Como funciona a FiberCash?
+    </span>
+    <span class="text">
+     Somos uma plataforma de saque de limite do seu cartão de credito, onde você
+     pode sacar esse valor e pagar em até 12x!
+     <br /><br />
+     O processo é simples, você nos informa quanto quer sacar do seu cartão de
+     credito e em quantas parcelas quer pagar, cadastra-se em nosso site e
+     efetua o processo. Após aprovado em 1 dia util você tem esse valor
+     creditado na sua conta bancaria. Simples assim!
+    </span>
+   </app-accordion>
+   <app-accordion id="q4">
+    <span class="title">
+     O que eu preciso para usar a FiberCash?
+    </span>
+    <span class="text">
+     Você so precisa ter um cartão de credito com limite e uma conta bancaria
+     para receber o valor do seu saque em até 1 dia util.
+    </span>
+   </app-accordion>
+   <app-accordion id="q5">
+    <span class="title">
+     Como eu recebo o valor Solicitado?
+    </span>
+    <span class="text">
+     Basta você simular e solicitar o saque, que após aprovado, você ira
+     preencher os dados de sua conta bancaria onde recebera o credito em até 1
+     dia util.
+    </span>
+   </app-accordion>
+   <app-accordion id="q6">
+    <span class="title">
+     Qual taxa de juros a FiberCash trabalha?
+    </span>
+    <span class="text">
+     Pensando em você, nos trabalhamos com a menor taxa do mercado!
+     <br /><br />
+     Taxa fixa de 0.99% ao mês!
+     <br /><br />
+     Isso mesmo, não tem segredo e nem taxa mais alta de acordo com perfil do
+     usuário. Aqui a taxa é fixa e ponto final!
+    </span>
+   </app-accordion>
+   <app-accordion id="q7">
+    <span class="title">
+     Como consigo entrar em contato?
+    </span>
+    <span class="text">
+     Você escolhe:
+     <br /><br />
+     Por WhatsApp clicando no ícone do WhatsApp que fica no canto aqui do lado
+     direito ou mandando uma mensagem para o numero 18.98809.6553.
+     <br /><br />
+     Por telefone discando para 4003-1637.
+     <br /><br />
+     Por email no fale@fibercash.com.br
+     <br /><br />
+     Ou clicando em “Contato” no menu acima e enviando sua mensagem.
+    </span>
+   </app-accordion>
+  </section>
+  <button
+   routerLink="/ajuda"
+   routerLinkActive="active"
+   class="help.cta font-bold mx-auto my-8 md:block hidden"
+  >
+   Precisa de ajuda?
+   <i class="fa fa-chevron-right"></i>
+  </button>
+  <button
+   (click)="redirect(0)"
+   class="help.cta font-bold mx-auto my-8 md:hidden block"
+  >
+   Simular
+   <i class="fa fa-chevron-right"></i>
+  </button>
+ </section>
 </section>

@@ -1,244 +1,244 @@
 <section id="pagefooter" class="footer py-8">
+ <section
+  class="container mx-auto flex flex-wrap justify-center items-end footer.newsletter"
+ >
+  <section class="xl:w-4/12 lg:w-9/12 w-11/12">
+   <form
+    [formGroup]="newsletter"
+    class="footer.newsletter__form flex flex-wrap mx-auto lg:w-full py-8"
+   >
+    <header class="footer.newsletter__form-header py-1 w-full">
+     <h2 class="footer.newsletter__form-title md:text-left text-center">
+      Assine nossa newsletter e comece a planejar seu sonho
+     </h2>
+    </header>
+    <div class="footer.input-box w-full py-1">
+     <input
+      class="footer.input-box__input"
+      placeholder="Nome"
+      type="text"
+      formControlName="name"
+      required
+     />
+    </div>
+    <div class="footer.input-box lg:w-8/12 w-full py-1">
+     <input
+      class="footer.input-box__input"
+      placeholder="E-mail"
+      formControlName="email"
+      required
+      type="email"
+     />
+    </div>
+    <div class="footer.input-box lg:w-4/12 w-full py-1 px-2">
+     <button
+      (click)="sendNewsletter()"
+      [disabled]="!newsletter.valid"
+      class="footer.newsletter__cta"
+     >
+      Enviar
+      <i class="fa fa-chevron-right footer.newsletter__cta-icon"></i>
+     </button>
+    </div>
+    <div class="footer.input-box w-full py-1">
+     <span class="footer.newsletter_success font-bold hidden">
+      <i class="fa fa-check"></i> Obrigado em breve iremos mandar novidades no
+      seu e-mail!
+     </span>
+    </div>
+   </form>
+  </section>
+  <section class="lg:w-3/12 xl:px-1 lg:px-2 md:block hidden">
+   <figure class="w-full flex justify-end">
+    <img
+     class="footer.newsletter__avatar"
+     src="../../../assets/images/man-with-compute.png"
+     alt=""
+    />
+   </figure>
+  </section>
+ </section>
+ <section class="container mx-auto py-4">
+  <section class="xl:w-7/12 lg:w-full w-11/12 mx-auto md:py-4">
+   <section class="flex flex-wrap justify-start items-center">
+    <figure class="lg:w-6/12 w-4/12 footer.brand">
+     <img
+      class="footer.brand__img mx-auto"
+      src="../../../assets//images/logo.png"
+      alt=""
+     />
+    </figure>
+    <section class="lg:w-6/12 w-8/12">
+     <ul class="w-full flex md:justify-center justify-end">
+      <li class="px-1">
+       <a class="footer.social-icons" href="" target="_blank">
+        <i class="fa fa-facebook"></i>
+       </a>
+      </li>
+      <li class="px-1">
+       <a class="footer.social-icons" href="" target="_blank">
+        <i class="fa fa-twitter"></i>
+       </a>
+      </li>
+      <li class="px-1">
+       <a class="footer.social-icons" href="" target="_blank">
+        <i class="fa fa-instagram"></i>
+       </a>
+      </li>
+     </ul>
+    </section>
+   </section>
+  </section>
+ </section>
+ <section class="container mx-auto py-4">
   <section
-    class="container mx-auto flex flex-wrap justify-center items-end footer.newsletter"
+   class="xl:w-7/12 lg:w-full w-11/12 mx-auto flex flex-wrap py-4 footer.menu items-start"
   >
-    <section class="xl:w-4/12 lg:w-9/12 w-11/12">
-      <form
-        [formGroup]="newsletter"
-        class="footer.newsletter__form flex flex-wrap mx-auto lg:w-full py-8"
-      >
-        <header class="footer.newsletter__form-header py-1 w-full">
-          <h2 class="footer.newsletter__form-title md:text-left text-center">
-            Assine nossa newsletter e comece a planejar seu sonho
-          </h2>
-        </header>
-        <div class="footer.input-box w-full py-1">
-          <input
-            class="footer.input-box__input"
-            placeholder="Nome"
-            type="text"
-            formControlName="name"
-            required
-          />
-        </div>
-        <div class="footer.input-box lg:w-8/12 w-full py-1">
-          <input
-            class="footer.input-box__input"
-            placeholder="E-mail"
-            formControlName="email"
-            required
-            type="email"
-          />
-        </div>
-        <div class="footer.input-box lg:w-4/12 w-full py-1 px-2">
-          <button
-            (click)="sendNewsletter()"
-            [disabled]="!newsletter.valid"
-            class="footer.newsletter__cta"
-          >
-            Enviar
-            <i class="fa fa-chevron-right footer.newsletter__cta-icon"></i>
-          </button>
-        </div>
-        <div class="footer.input-box w-full py-1">
-          <span class="footer.newsletter_success font-bold hidden">
-            <i class="fa fa-check"></i> Obrigado em breve iremos mandar
-            novidades no seu e-mail!
-          </span>
-        </div>
-      </form>
-    </section>
-    <section class="lg:w-3/12 xl:px-1 lg:px-2 md:block hidden">
-      <figure class="w-full flex justify-end">
-        <img
-          class="footer.newsletter__avatar"
-          src="../../../assets/images/man-with-compute.png"
-          alt=""
-        />
-      </figure>
-    </section>
+   <section class="lg:w-3/12 w-5/12 px-2 footer.links-box">
+    <p class="footer.text py-2">
+     <a
+      href="https://app.fibercash.com.br/login?_ga=2.71129109.441627780.1587335113-1730889184.1586109685"
+      target="_blank"
+      class="footer.text"
+     >
+      Sua Conta
+     </a>
+    </p>
+    <p class="footer.text py-2">
+     <a
+      href="Javascript: void(0)"
+      (click)="showModal('contato')"
+      class="footer.text"
+     >
+      Contato
+     </a>
+    </p>
+    <p class="footer.text py-2">
+     <a
+      href="Javascript: void(0);"
+      (click)="redirect('#helppage')"
+      class="footer.text"
+     >
+      Dúvidas
+     </a>
+    </p>
+   </section>
+   <section class="lg:w-4/12 w-7/12 px-2 footer.links-box">
+    <p class="footer.text py-2">
+     <a
+      href="Javascript: void(0);"
+      (click)="redirect('#helppage')"
+      class="footer.text"
+     >
+      Como funciona?
+     </a>
+    </p>
+    <p class="footer.text py-2">
+     <a
+      href=""
+      routerLink="/ajuda"
+      routerLinkActive="active"
+      class="footer.text"
+     >
+      Dicas para realizar seu saque
+     </a>
+    </p>
+   </section>
+   <section
+    class="footer.contact lg:w-5/12 w-full px-2 md:py-0 py-2 md:my-0 my-8"
+   >
+    <p class="footer.text py-2">
+     Contatos
+    </p>
+    <p class="footer.text py-2">
+     Telefone: (11) 4321-9876 / 0800-345-789
+    </p>
+    <p class="footer.text py-2">
+     E-mail: contato@fiber.com.br
+    </p>
+   </section>
   </section>
-  <section class="container mx-auto py-4">
-    <section class="xl:w-7/12 lg:w-full w-11/12 mx-auto md:py-4">
-      <section class="flex flex-wrap justify-center items-center">
-        <figure class="lg:w-6/12 w-4/12 footer.brand">
-          <img
-            class="footer.brand__img mx-auto"
-            src="../../../assets//images/logo.png"
-            alt=""
-          />
-        </figure>
-        <section class="lg:w-6/12 w-8/12">
-          <ul class="w-full flex md:justify-center justify-end">
-            <li class="px-1">
-              <a class="footer.social-icons" href="" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="px-1">
-              <a class="footer.social-icons" href="" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="px-1">
-              <a class="footer.social-icons" href="" target="_blank">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </section>
-    </section>
+ </section>
+ <section class="container mx-auto py-4">
+  <section class="xl:w-7/12 lg:w-full w-11/12 mx-auto py-4 text-center">
+   <p class="footer.disclaimer">
+    SDX TECNOLOGIA DA INFORMACAO LTDA EPP | CNPJ 22.316.827/0001-41 | Rua Cel
+    Irlandino Sandoval, 377, Casa 7 | email: fale@fibercash.com.br
+   </p>
   </section>
-  <section class="container mx-auto py-4">
-    <section
-      class="xl:w-7/12 lg:w-full w-11/12 mx-auto flex flex-wrap py-4 footer.menu items-start"
-    >
-      <section class="lg:w-3/12 w-5/12 px-2 footer.links-box">
-        <p class="footer.text py-2">
-          <a
-            href="https://app.fibercash.com.br/login?_ga=2.71129109.441627780.1587335113-1730889184.1586109685"
-            target="_blank"
-            class="footer.text"
-          >
-            Sua Conta
-          </a>
-        </p>
-        <p class="footer.text py-2">
-          <a
-            href="Javascript: void(0)"
-            (click)="showModal('contato')"
-            class="footer.text"
-          >
-            Contato
-          </a>
-        </p>
-        <p class="footer.text py-2">
-          <a
-            href="Javascript: void(0);"
-            (click)="redirect('#helppage')"
-            class="footer.text"
-          >
-            Dúvidas
-          </a>
-        </p>
-      </section>
-      <section class="lg:w-4/12 w-7/12 px-2 footer.links-box">
-        <p class="footer.text py-2">
-          <a
-            href="Javascript: void(0);"
-            (click)="redirect('#helppage')"
-            class="footer.text"
-          >
-            Como funciona?
-          </a>
-        </p>
-        <p class="footer.text py-2">
-          <a
-            href=""
-            routerLink="/ajuda"
-            routerLinkActive="active"
-            class="footer.text"
-          >
-            Dicas para realizar seu saque
-          </a>
-        </p>
-      </section>
-      <section
-        class="footer.contact lg:w-5/12 w-full px-2 md:py-0 py-2 md:my-0 my-8"
-      >
-        <p class="footer.text py-2">
-          Contatos
-        </p>
-        <p class="footer.text py-2">
-          Telefone: (11) 4321-9876 / 0800-345-789
-        </p>
-        <p class="footer.text py-2">
-          E-mail: contato@fiber.com.br
-        </p>
-      </section>
-    </section>
-  </section>
-  <section class="container mx-auto py-4">
-    <section class="xl:w-7/12 lg:w-full w-11/12 mx-auto py-4 text-center">
-      <p class="footer.disclaimer">
-        SDX TECNOLOGIA DA INFORMACAO LTDA EPP | CNPJ 22.316.827/0001-41 | Rua
-        Cel Irlandino Sandoval, 377, Casa 7 | email: fale@fibercash.com.br
-      </p>
-    </section>
-  </section>
+ </section>
 </section>
 <app-modal id="contato">
-  <span class="title font-bold">
-    Envie sua mensagem
-  </span>
-  <form [formGroup]="message" class="body relative">
-    <section class="w-11/12 mx-auto">
-      <div class="py-2 w-full">
-        <label class="footer.label font-bold" for="namefooter">
-          Nome
-        </label>
-        <input
-          placeholder="Ex.: João Paulo da Cunha"
-          type="text"
-          formControlName="name"
-          class="footer.input w-full"
-          id="namefooter"
-        />
-      </div>
-      <div class="py-2 w-full">
-        <label class="footer.label font-bold" for="emailfooter">
-          E-mail
-        </label>
-        <input
-          placeholder="Ex.: joao.paulo@gmail.com"
-          type="email"
-          formControlName="email"
-          class="footer.input w-full"
-          id="emailfooter"
-        />
-      </div>
-      <div class="py-2 w-full">
-        <label class="footer.label font-bold" for="phonefooter">
-          Telefone
-        </label>
-        <input
-          placeholder="Ex.: (11) 9 6501-6462"
-          type="text"
-          formControlName="phone"
-          class="footer.input w-full"
-          id="phonefooter"
-        />
-      </div>
-      <div class="py-2">
-        <label class="footer.label font-bold" for="messagefooter">
-          Mensagem
-        </label>
-        <textarea
-          formControlName="message"
-          class="footer.input w-full"
-          name=""
-          id="messagefooter"
-        ></textarea>
-      </div>
-      <div class="py-2 text-center flex justify-center footer.captcha">
-        <re-captcha
-          (resolved)="resolved($event)"
-          siteKey="YOUR_SITE_KEY"
-        ></re-captcha>
-      </div>
-      <div class="py-0">
-        <button
-          [disabled]="!message.valid"
-          (click)="sendMessage()"
-          class="footer.cta font-bold block mx-auto"
-        >
-          Continuar
-        </button>
-      </div>
-    </section>
-    <section class="footer.thanks w-full">
-      <div id="thanksfooter" class="w-11/12 mx-auto block"></div>
-    </section>
-  </form>
+ <span class="title font-bold">
+  Envie sua mensagem
+ </span>
+ <form [formGroup]="message" class="body relative">
+  <section class="w-11/12 mx-auto">
+   <div class="py-2 w-full">
+    <label class="footer.label font-bold" for="namefooter">
+     Nome
+    </label>
+    <input
+     placeholder="Ex.: João Paulo da Cunha"
+     type="text"
+     formControlName="name"
+     class="footer.input w-full"
+     id="namefooter"
+    />
+   </div>
+   <div class="py-2 w-full">
+    <label class="footer.label font-bold" for="emailfooter">
+     E-mail
+    </label>
+    <input
+     placeholder="Ex.: joao.paulo@gmail.com"
+     type="email"
+     formControlName="email"
+     class="footer.input w-full"
+     id="emailfooter"
+    />
+   </div>
+   <div class="py-2 w-full">
+    <label class="footer.label font-bold" for="phonefooter">
+     Telefone
+    </label>
+    <input
+     placeholder="Ex.: (11) 9 6501-6462"
+     type="text"
+     formControlName="phone"
+     class="footer.input w-full"
+     id="phonefooter"
+    />
+   </div>
+   <div class="py-2">
+    <label class="footer.label font-bold" for="messagefooter">
+     Mensagem
+    </label>
+    <textarea
+     formControlName="message"
+     class="footer.input w-full"
+     name=""
+     id="messagefooter"
+    ></textarea>
+   </div>
+   <div class="py-2 text-center flex justify-center footer.captcha">
+    <re-captcha
+     (resolved)="resolved($event)"
+     siteKey="YOUR_SITE_KEY"
+    ></re-captcha>
+   </div>
+   <div class="py-0">
+    <button
+     [disabled]="!message.valid"
+     (click)="sendMessage()"
+     class="footer.cta font-bold block mx-auto"
+    >
+     Continuar
+    </button>
+   </div>
+  </section>
+  <section class="footer.thanks w-full">
+   <div id="thanksfooter" class="w-11/12 mx-auto block"></div>
+  </section>
+ </form>
 </app-modal>

@@ -4,15 +4,12 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ConfigService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  private configAjax: Object = {
-    
-  }
+  private configAjax: Object = {};
 
   getAjax(): void {
     return this.http.get();

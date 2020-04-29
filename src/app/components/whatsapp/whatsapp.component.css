@@ -1,5 +1,4 @@
 .whatsApp {
-  min-height: 100vh;
   background-image: url("../../../assets/images/bg-howWork.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -7,18 +6,23 @@
 }
 
 .whatsApp\.title {
-  color: var(--color-blue);
-  font-size: var(--text-p);
+  color: var(--color-orange);
+  font-size: var(--title-smll-h4);
 }
 
 .whatsApp\.text {
   font-size: var(--text-default);
 }
 
+.whatsApp\.text a{
+  color: #007bff;
+  text-decoration: underline;
+}
+
 .whatsApp\.cta {
-  background-color: var(--color-orange);
+  background-color: var(--color-aquamarine);
   font-size: var(--text-cta);
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 45px;
   border-radius: 60px;
   position: relative;
@@ -51,7 +55,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-
   .whatsApp\.title {
     font-size: var(--title-smll-h4);
   }
@@ -59,5 +62,4 @@
   .whatsApp\.text {
     font-size: var(--text-smll-default);
   }
-
 }

@@ -1,26 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { scroll } from "../../../assets/js/scroll";
+import { scroll } from '../../../assets/js/scroll';
 
 @Component({
   selector: 'app-whatsapp',
   templateUrl: './whatsapp.component.html',
-  styleUrls: ['./whatsapp.component.css']
+  styleUrls: ['./whatsapp.component.css'],
 })
 export class WhatsappComponent implements OnInit {
-
   private scrollIT: scroll;
 
-  constructor() { 
-    
+  constructor() {
     this.scrollIT = new scroll();
-
   }
 
   public redirect(goTo: number): void {
     this.scrollIT.scrollIt(goTo, null);
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

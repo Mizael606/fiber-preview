@@ -1,8 +1,4 @@
 .home\.header {
-  background-image: url("../../../../assets/images/header.bg.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background: linear-gradient(208.07deg, #ff8700, #ff500f);
   height: auto;
 }

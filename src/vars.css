@@ -1,15 +1,17 @@
 :root {
   --color-blue: #572afb;
+  --color-aquamarine: #7dcdc3;
   --color-blue-bold: #162675;
-  --color-orange: #e06617;
-  --color-gray: #cecece;
+  --color-orange: #ff500f;
+  --color-orange-light: #ffcdbe;
+  --color-gray: #6a6e81;
   --color-violet: #8979d9;
 
-  --menu-fz: 18px;
+  --menu-fz: 16px;
   --title-h4: 42px;
   --title-smll-h4: 22px;
 
-  --text-p: 22px;
+  --text-p: 18px;
   --text-smll-p: 14px;
 
   --text-default: 16px;
@@ -19,5 +21,5 @@
   --text-smll-label: 11px;
 
   --text-disclaimer: 12px;
-  --text-cta: 20px;
+  --text-cta: 16px;
 }

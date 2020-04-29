@@ -1,5 +1,4 @@
 .help {
-  min-height: 100vh;
   background-image: url("../../../assets/images/bg-howWork.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -7,14 +6,14 @@
 }
 
 .help\.title {
-  color: var(--color-blue);
+  color: var(--color-gray);
   font-size: var(--title-h4);
 }
 
 .help\.cta {
-  background-color: var(--color-orange);
+  background-color: var(--color-aquamarine);
   font-size: var(--text-cta);
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 45px;
   border-radius: 60px;
   position: relative;

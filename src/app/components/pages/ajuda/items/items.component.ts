@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Modal } from "../../../../../assets/js/modal";
+import { Modal } from '../../../../../assets/js/modal';
 
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['./items.component.css']
+  styleUrls: ['./items.component.css'],
 })
 export class ItemsComponent implements OnInit {
-
   private modalClass: Modal;
 
   constructor() {
@@ -18,7 +17,5 @@ export class ItemsComponent implements OnInit {
     this.modalClass.showModal(id);
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

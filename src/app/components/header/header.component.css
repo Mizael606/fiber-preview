@@ -1,10 +1,14 @@
+.header {
+  background-image: url("../../../assets/images/dot.png");
+}
+
 .header\.text {
   padding-top: 100px;
 }
 
 .header\.text__h4 {
   font-size: var(--title-h4);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header\.text__p {
@@ -21,7 +25,7 @@
   top: -300px;
   left: 0;
   width: 100%;
-  background-color: var(--color-blue);
+  background: linear-gradient(208.07deg, #ff8700, #ff500f);
   z-index: 999;
   transition: all ease 220ms;
   box-shadow: 0 4px 8px #333333;
@@ -31,7 +35,7 @@
   top: 0;
 }
 
-@media only screen and ( max-width: 640px ) {
+@media only screen and (max-width: 640px) {
   .header\.text {
     padding-top: 10px;
   }
@@ -45,9 +49,9 @@
   }
 
   .header\.icons__imgs {
-    max-height: 18px;
-    height: 30px;
+    max-height: 40px;
+    height: auto;
+    width: auto;
     max-width: 90%;
   }
-
 }

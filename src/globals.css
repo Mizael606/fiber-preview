@@ -1,0 +1,9 @@
+select, input {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.slick-slide:not(.slick-center) div .depoiments\.slides {
+  opacity: 0.4;
+  transform: scale(0.8);
+}

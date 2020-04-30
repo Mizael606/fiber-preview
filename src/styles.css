@@ -615,9 +615,9 @@ video {
   }
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1200px){
   .container{
-    max-width: 1800px;
+    max-width: 1200px;
   }
 }
 
@@ -5184,7 +5184,7 @@ video {
 }
 
 .max-w-screen-xl{
-  max-width: 1800px;
+  max-width: 1200px;
 }
 
 .min-h-0{
@@ -17764,7 +17764,7 @@ video {
   }
 
   .sm\:max-w-screen-xl{
-    max-width: 1800px;
+    max-width: 1200px;
   }
 
   .sm\:min-h-0{
@@ -30345,7 +30345,7 @@ video {
   }
 
   .md\:max-w-screen-xl{
-    max-width: 1800px;
+    max-width: 1200px;
   }
 
   .md\:min-h-0{
@@ -42926,7 +42926,7 @@ video {
   }
 
   .lg\:max-w-screen-xl{
-    max-width: 1800px;
+    max-width: 1200px;
   }
 
   .lg\:min-h-0{
@@ -50943,7 +50943,7 @@ video {
   }
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1200px){
   .xl\:sr-only{
     position: absolute;
     width: 1px;
@@ -55507,7 +55507,7 @@ video {
   }
 
   .xl\:max-w-screen-xl{
-    max-width: 1800px;
+    max-width: 1200px;
   }
 
   .xl\:min-h-0{

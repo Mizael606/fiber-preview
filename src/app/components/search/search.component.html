@@ -1,107 +1,99 @@
 <section class="search container mx-auto md:my-4 md:py-4 py-2">
-  <form [formGroup]="simulator">
-    <section
-      class="search.body xl:w-7/12 lg:w-full w-11/12 mx-auto flex flex-wrap items-end"
+ <form [formGroup]="simulator">
+  <section
+   class="search.body xl:w-full lg:w-full w-11/12 mx-auto flex flex-wrap items-end"
+  >
+   <div class="lg:w-3/12 w-full px-1">
+    <label class="search.label font-bold" for="option">
+     Você precisa do dinheiro para
+    </label>
+    <div class="search.input-box w-full my-1">
+     <select
+      formControlName="option"
+      class="search.input-box__select"
+      id="option"
+     >
+      <option value="" selected disabled>
+       Selecione uma opção
+      </option>
+      <option value="Despesas%20de%20casamento">Despesas de casamento</option>
+      <option value="Despesas%20m%C3%A9dicas%20e%20de%20sa%C3%BAde"
+       >Despesas médicas e de saúde</option
+      >
+      <option value="Reformar%20a%20casa">Reformar a casa</option>
+      <option value="Despesas%20n%C3%A3o%20planejadas"
+       >Despesas não planejadas</option
+      >
+      <option value="Quitar%20financimento%20de%20ve%C3%ADculo"
+       >Quitar financimento de veículo</option
+      >
+      <option value="Mudar%20de%20resid%C3%AAncia">Mudar de residência</option>
+      <option value="Pagar%20sinal%20de%20contrato%20de%20aluguel"
+       >Pagar sinal de contrato de aluguel</option
+      >
+      <option value="Quitar%20empr%C3%A9stimo">Quitar empréstimo</option>
+      <option value="Investir%20na%20carreira%20e%20estudos"
+       >Investir na carreira e estudos</option
+      >
+      <option value="Realizar%20a%20viagem%20dos%20sonhos"
+       >Realizar a viagem dos sonhos</option
+      >
+      <option value="Comprar%20algo%20especial">Comprar algo especial</option>
+      <option value="Empreender">Empreender</option>
+      <option value="Quitar%20cart%C3%A3o%20de%20cr%C3%A9dito"
+       >Quitar cartão de crédito</option
+      >
+      <option value="Quitar%20cheque%20especial">Quitar cheque especial</option>
+      <option value="Outros">Outros</option>
+     </select>
+     <i class="fa fa-chevron-down search.input-box__icons"></i>
+    </div>
+   </div>
+   <div class="lg:w-3/12 w-full px-1">
+    <label class="search.label font-bold" for="value">
+     Qual valor você precisa?
+     <span
+      *ngIf="
+       simulator.controls?.value?.errors?.name &&
+       simulator.controls?.value?.errors?.name === 'minValue'
+      "
+      class="search.error block"
+     >
+      O Valor minímo é de R$ 300,00
+     </span>
+    </label>
+    <div class="search.input-box w-full my-1">
+     <input
+      formControlName="value"
+      id="value"
+      class="search.input-box__input"
+      placeholder="Ex.: R$ 6.000,00"
+      type="text"
+     />
+    </div>
+   </div>
+   <div class="lg:w-3/12 w-full px-1">
+    <label class="search.label font-bold" for="installments">
+     Quantidade de parcelas
+    </label>
+    <div class="search.input-box w-full my-1">
+     <select class="search.input-box__select" id="installments">
+      <option value="" selected disabled>
+       Selecione uma opção
+      </option>
+     </select>
+     <i class="fa fa-chevron-down search.input-box__icons"></i>
+    </div>
+   </div>
+   <div class="lg:w-3/12 w-full px-1 flex justify-end">
+    <button
+     [disabled]="!simulator.valid"
+     (click)="onSubmit()"
+     class="search.cta font-bold lg:w-11/12 w-full my-2"
     >
-      <div class="lg:w-3/12 w-full px-1">
-        <label class="search.label font-bold" for="option">
-          Você precisa do dinheiro para
-        </label>
-        <div class="search.input-box w-full my-1">
-          <select
-            formControlName="option"
-            class="search.input-box__select"
-            id="option"
-          >
-            <option value="" selected disabled>
-              Selecione uma opção
-            </option>
-            <option value="Despesas%20de%20casamento"
-              >Despesas de casamento</option
-            >
-            <option value="Despesas%20m%C3%A9dicas%20e%20de%20sa%C3%BAde"
-              >Despesas médicas e de saúde</option
-            >
-            <option value="Reformar%20a%20casa">Reformar a casa</option>
-            <option value="Despesas%20n%C3%A3o%20planejadas"
-              >Despesas não planejadas</option
-            >
-            <option value="Quitar%20financimento%20de%20ve%C3%ADculo"
-              >Quitar financimento de veículo</option
-            >
-            <option value="Mudar%20de%20resid%C3%AAncia"
-              >Mudar de residência</option
-            >
-            <option value="Pagar%20sinal%20de%20contrato%20de%20aluguel"
-              >Pagar sinal de contrato de aluguel</option
-            >
-            <option value="Quitar%20empr%C3%A9stimo">Quitar empréstimo</option>
-            <option value="Investir%20na%20carreira%20e%20estudos"
-              >Investir na carreira e estudos</option
-            >
-            <option value="Realizar%20a%20viagem%20dos%20sonhos"
-              >Realizar a viagem dos sonhos</option
-            >
-            <option value="Comprar%20algo%20especial"
-              >Comprar algo especial</option
-            >
-            <option value="Empreender">Empreender</option>
-            <option value="Quitar%20cart%C3%A3o%20de%20cr%C3%A9dito"
-              >Quitar cartão de crédito</option
-            >
-            <option value="Quitar%20cheque%20especial"
-              >Quitar cheque especial</option
-            >
-            <option value="Outros">Outros</option>
-          </select>
-          <i class="fa fa-chevron-down search.input-box__icons"></i>
-        </div>
-      </div>
-      <div class="lg:w-3/12 w-full px-1">
-        <label class="search.label font-bold" for="value">
-          Qual valor você precisa?
-          <span
-            *ngIf="
-              simulator.controls?.value?.errors?.name &&
-              simulator.controls?.value?.errors?.name === 'minValue'
-            "
-            class="search.error block"
-          >
-            O Valor minímo é de R$ 300,00
-          </span>
-        </label>
-        <div class="search.input-box w-full my-1">
-          <input
-            formControlName="value"
-            id="value"
-            class="search.input-box__input"
-            placeholder="Ex.: R$ 6.000,00"
-            type="text"
-          />
-        </div>
-      </div>
-      <div class="lg:w-3/12 w-full px-1">
-        <label class="search.label font-bold" for="installments">
-          Quantidade de parcelas
-        </label>
-        <div class="search.input-box w-full my-1">
-          <select class="search.input-box__select" id="installments">
-            <option value="" selected disabled>
-              Selecione uma opção
-            </option>
-          </select>
-          <i class="fa fa-chevron-down search.input-box__icons"></i>
-        </div>
-      </div>
-      <div class="lg:w-3/12 w-full px-1">
-        <button
-          [disabled]="!simulator.valid"
-          (click)="onSubmit()"
-          class="search.cta font-bold lg:w-11/12 w-full my-2 mx-auto"
-        >
-          <i class="fa fa-search"></i> Fazer simulação
-        </button>
-      </div>
-    </section>
-  </form>
+     <i class="fa fa-search"></i> Fazer simulação
+    </button>
+   </div>
+  </section>
+ </form>
 </section>

@@ -1,13 +1,13 @@
 module.exports = {
-  theme: {
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1800px",
-    },
-    extend: {},
+ theme: {
+  screens: {
+   sm: '640px',
+   md: '768px',
+   lg: '1024px',
+   xl: '1200px',
   },
-  variants: {},
-  plugins: [],
+  extend: {},
+ },
+ variants: {},
+ plugins: [],
 };
